@@ -12,13 +12,18 @@ public class WriteSymptomDataToFile {
 	private String filepath;
 	private Map<String, Integer> mapSymptoms;
 	
-	//Constructor
+	/*
+	 * Constructor
+	 * Define filepath and mapSymptoms
+	 */
 	public WriteSymptomDataToFile(Map<String, Integer> mapSymptoms, String filepath) {
 		this.filepath = filepath;
 		this.mapSymptoms = mapSymptoms;
 	}
 	
-	//Write data in pathfile
+	/*
+	 * Write data in Map to filepath 
+	 */
 	public void writeData() {
 		FileWriter writer;
 		try {
